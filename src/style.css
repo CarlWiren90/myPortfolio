@@ -48,6 +48,8 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
 }
 
 * {

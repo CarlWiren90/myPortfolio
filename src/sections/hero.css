@@ -11,6 +11,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 3em;
+    transform-style: preserve-3d;
+    transform: translateZ(-1px) scale(2.2);
 }
 
 .heading__container--hero {
@@ -30,8 +32,8 @@
     align-self: center;
     text-align: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    word-spacing: 5px;
+
 }
 
 .heading-wrapper {
@@ -44,17 +46,17 @@
 }
 
 .heading__hero--carl, .heading__hero--wiren {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 4rem;
-    letter-spacing: -2px;  
+    letter-spacing: -1px;  
     align-self: center;
     font-family: 'General Sans Regular';
     font-weight: 400;
+    margin: 3px;
 }
 
 .heading__hero--frontend, .heading__hero--developer {
     font-family: 'General Sans Bold';
-
     font-size: 5rem;
     line-height: 4rem;
     letter-spacing: -5px;     
@@ -93,14 +95,15 @@
     display: flex;
     gap: 3em;
     width: 90%;
+    justify-content: center;
  }
 
  .button {
     font-size: 1.3rem;
     font-family: 'General Sans Regular';
     border: 3px solid var(--yellow);
-    min-width: 10%;
-    width: 50%;
+    min-width: 40%;
+    width: 30%;
     height: 1.7em;
     text-align: center;
  }

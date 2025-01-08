@@ -7,7 +7,40 @@
     align-items: center;
     color: var(--yellow);
     z-index: -1;
-    justify-content: center;
     flex-direction: column;
     gap: 3em;
+    transform-style: preserve-3d;
+
+}
+
+.rolling-words-container {
+    max-height: 3.5em;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-family: 'General Sans Bold';
+    color: var(--black);
+    font-size: 3.5rem;
+    transform: translateX(0px);
+    animation-name: move;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+/* .rolling-word {
+    transform: translateX(0px);
+    animation-name: move;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+} */
+
+
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(1000px);
+    }
 }
