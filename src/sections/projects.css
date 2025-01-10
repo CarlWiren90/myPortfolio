@@ -23,16 +23,10 @@
     font-size: 3.5rem;
     transform: translateX(0px);
     animation-name: move;
-    animation-duration: 20s;
+    animation-duration: 50s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-
-/* .rolling-word {
-    transform: translateX(0px);
-    animation-name: move;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-} */
 
 
 
