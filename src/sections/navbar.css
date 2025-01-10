@@ -102,5 +102,21 @@
 }
 
 @media screen and (max-width: 430px) {
-    
+    .navbar__status {
+        margin-left: 1.5em;
+    }
+    .status {
+        font-size: 1rem;
+        letter-spacing: -1px;
+    }
+
+    .status__info {
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+    }
+
+    .navbar__logo {
+        width: 35px;
+        height: auto;  
+    }
 }

@@ -64,6 +64,8 @@ body {
 
 @media only screen and (max-width: 430px) {
   html body #app {
-    perspective: 2000px;
+    perspective: 1px;
+    transform-style: preserve-3d;
+
   }
 }
