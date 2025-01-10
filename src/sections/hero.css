@@ -11,8 +11,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 3em;
-    transform-style: preserve-3d;
     transform: translateZ(-1px) scale(2.2);
+    
 }
 
 .heading__container--hero {
@@ -134,7 +134,7 @@
     position: absolute;
     content: '';
     width: 1%;
-    height: 5em;
+    height: 3em;
     background-color: var(--yellow);
     top: 2em;
     left: 50%;
@@ -160,9 +160,9 @@
     }
 }
 
-
-@media screen and (max-width: 850px) {
+@media only screen and (max-width: 430px) {
     .section--hero {
-        flex-direction: column;
-    }
+        transform: translateZ(-1px) scale(1);
+
+    } 
 }
