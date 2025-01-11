@@ -47,6 +47,10 @@
     min-width: 20em;
 }
 
+.navbar__link-wrapper {
+    display: flex;
+}
+
 .status {
     font-family: 'General Sans Bold';
     font-size: 1.4rem;
@@ -106,7 +110,7 @@
         margin-left: 1.5em;
     }
     .status {
-        font-size: 1rem;
+        font-size: 1.1rem;
         letter-spacing: -1px;
     }
 
@@ -118,5 +122,10 @@
     .navbar__logo {
         width: 35px;
         height: auto;  
+    }
+    
+    .navbar__link-wrapper {
+        display: flex;
+        margin-right: 1.5em;
     }
 }
