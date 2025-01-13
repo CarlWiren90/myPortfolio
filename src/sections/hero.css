@@ -65,7 +65,7 @@
 
 
 .heading__info {
-    font-family: 'General Sans';
+    font-family: 'General Sans Regular';
     font-weight: 400;
     font-size: 1.3rem;
     align-self: center;
@@ -111,7 +111,7 @@
  a {
    text-decoration: none;
    color: var(--yellow);
-   font-family: 'General Sans';
+   font-family: 'General Sans Regular';
    font-weight: 600;
  }
 
