@@ -22,12 +22,14 @@
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
 }
 
 .rolling-word {
     display: inline-block;
     animation: move 7s linear infinite;
+    min-width: 0vw;
+
 }
 
 
