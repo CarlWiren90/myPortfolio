@@ -121,6 +121,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 5em;
+    opacity: 1;
     
  }
 

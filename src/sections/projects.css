@@ -10,32 +10,28 @@
     flex-direction: column;
     gap: 3em;
     transform-style: preserve-3d;
-
+    
 }
 
 .rolling-words-container {
     max-height: 3.5em;
-    width: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
     font-family: 'General Sans Bold';
     color: var(--black);
     font-size: 3.5rem;
-    transform: translateX(0px);
-    animation-name: move;
-    animation-duration: 50s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.rolling-word {
+    display: inline-block;
+    animation: marquee 5s linear infinite;
 }
 
 
 
-@keyframes move {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(1000px);
-    }
+@keyframes marquee {
+0%   { transform: translate(0, 0); }
+100% { transform: translate(-100%, 0); }
 }
