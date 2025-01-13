@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     appWindow.addEventListener('scroll', () => {
         let topValue = rollingWordsElement.getBoundingClientRect().top;
-        if (rollingWordsElement && topValue < 750) {
-            rollingWordsAnimation(rollingWordsElement);
+        if (rollingWordsElement && topValue < 850) {
+            rollingWordsAnimation(rollingWordsElement, topValue);
         }
     })
 })

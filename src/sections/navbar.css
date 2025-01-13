@@ -1,12 +1,14 @@
 .navbar {
     font-family: 'General Sans Regular';
     width: 100%;
-    position: absolute;
+    position: fixed;
     height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 100; 
+    transform: translateZ(0); /* Hardware acceleration */
+    will-change: transform;  /* Hint to the browser */
 }
 
 .navbar__link {
@@ -93,6 +95,7 @@
 .navbar__logo {
     align-self: center;
     padding-top: 5px;
+
 }
 
 @keyframes pulse {

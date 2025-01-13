@@ -165,7 +165,6 @@
     .section--hero {
         transform: translateZ(-1px) scale(2);
         transform-style: preserve-3d;
-
     } 
 
     .heading__container--hero {
