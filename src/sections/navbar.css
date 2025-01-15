@@ -37,20 +37,17 @@
 }
 
 .navbar__status {
-    width: 100%;
     position: relative;
     z-index: 9999;
-}
-
-.navbar__status {
     display: flex;
     align-items: center;
     gap: 0.7em;
-    min-width: 20em;
+    min-width: 7em;
 }
 
+
 .navbar__link-wrapper {
-    display: flex;
+    display: flex;;
 }
 
 .status {
@@ -109,8 +106,10 @@
 }
 
 @media screen and (max-width: 430px) {
+
+
     .navbar__status {
-        margin-left: 1.5em;
+        margin-left: 1em;;
     }
     .status {
         font-size: 1.1rem;
@@ -123,12 +122,13 @@
     }
 
     .navbar__logo {
-        width: 35px;
-        height: auto;  
+        width: 30px;
+        height: auto;      
     }
     
     .navbar__link-wrapper {
         display: flex;
-        margin-right: 1.5em;
+        margin-right: 1em;
     }
 }
+
