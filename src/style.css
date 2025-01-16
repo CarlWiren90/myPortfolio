@@ -63,10 +63,17 @@ body {
   height: 100vh;
 }
 
+canvas {
+  width: 100%;
+  height: 100%;
+  /* display: block;  */
+  position: absolute;
+}
+
+
 @media only screen and (max-width: 430px) {
   html body #app {
     perspective: 1px;
     transform-style: preserve-3d;
-
   }
 }
