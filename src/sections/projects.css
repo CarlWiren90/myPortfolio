@@ -81,30 +81,23 @@
 
 @media only screen and (max-width: 430px) {
     .projects__list {
-        grid-template-columns:repeat(10, 2em);
-        grid-template-rows: repeat(15, 2em) ;
-        width: 90%;
-        gap: 0.5em;
-        margin-top: 8em;
-        height: 100vh;
-        justify-content: center;
-    }   
-
-    .project__image--cruxity {
-        grid-column: span 5;
-        grid-row: span 4;
-        
-    }
-    
-    .project__image--portfolio {
-        grid-column: span 5;
-        grid-row: span 3;
-        object-fit: cover;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 90%; 
+        gap: 1em; 
+        margin-top: 8em; 
+        justify-content: center; 
+        align-items: center; 
+        height: auto;
     }
 
-    .project__image--coming-soon {
-        grid-column: span 5;
-        grid-row: span 4;
-        object-fit: cover;
+    .project__image {
+        width: 800px; 
+        height: 230px; 
+        object-fit: fill; 
+        grid-column: span 1;
+        grid-row: span 1;
+
     }
 }
