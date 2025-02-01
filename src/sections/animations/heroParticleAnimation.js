@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+/* import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
@@ -20,4 +20,4 @@ loader.load('animation/scene.gltf', function (gltf) {
     function animate() {
 	renderer.render( scene, camera );
 }
-renderer.setAnimationLoop( animate );
+renderer.setAnimationLoop( animate ); */

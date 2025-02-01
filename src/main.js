@@ -17,23 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProjects(projectsContainer, projectsList);
     }
     
-    if (rollingWordsElement) {
-        appWindow.addEventListener('scroll', () => {
-            let topValue = rollingWordsElement.getBoundingClientRect().top;
-            if (rollingWordsElement && topValue < 850) {
-                rollingWordsAnimation(rollingWordsElement, topValue);
-            }
-        })
-    }
+    appWindow.addEventListener('scroll', () => {
+        let topValue = rollingWordsElement.getBoundingClientRect().top;
+        if (rollingWordsElement && topValue < 850) {
+            rollingWordsAnimation(rollingWordsElement, topValue);
+        }
+    })
 
-    if (heroElement) {
-        appWindow.addEventListener('scroll', () => {
-            let scrollValue = appWindow.scrollTop;
-        
-            if (heroElement) {
-                fadingHeroAnimation(heroElement, scrollValue);
-            }
-        });
-    }
-
+    appWindow.addEventListener('scroll', () => {
+        let scrollValue = appWindow.scrollTop;
+    
+        if (heroElement) {
+            fadingHeroAnimation(heroElement, scrollValue);
+        }
+    });
 })
